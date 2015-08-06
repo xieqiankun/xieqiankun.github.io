@@ -1,31 +1,127 @@
+
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>CSS Layout</title>
-		<link rel="stylesheet" href="main.css">
-	</head>
-	<body>
-		<header>
-			<nav>
-				<h1>My Page</h1>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Links</a></li>
-				</ul>
-			</nav>
-		</header>
+<head>
+<title>QiankunXie Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style >
+  a.schoolweb{
+    text-decoration: none;
+    color: black;
+  }
+  a.schoolweb:hover{
+  color: grey;
+ }
+</style>
+</head>
 
-		<div class= "row">
-		<div class="col">col1</div>
-		<div class="col">col2</div>
-		<div class="col">col3</div>
-		<div class="col">col3</div>
-		<div class="col">col4</div>
-		<footer>@xieqiankun</footer>
+<body>
 
-		</div>
-			
-	</body>
+<!-- Side Navigation -->
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xxxlarge w3-text-theme">Close &times;</a>
+  <a href="index.html">HOME</a>   
+  <a href="javascript:void(0)">PROFILE</a>   
+  <a href="javascript:void(0)">PROJECTS</a>   
+  <a href="javascript:void(0)">PHOTOS</a>   
+  <a href="javascript:void(0)">CONTACT ME</a>   
+</nav>
 
+<!-- Header -->
+<header class="w3-container w3-theme" id="myHeader">
+  <i onclick="w3_open()" class="material-icons w3-xxlarge w3-opennav">menu</i> 
+  <div class="w3-center">
+  <h5>THIS   IS</h5>
+  <h1 class="w3-animate-bottom">QIANKUN XIE'S</h1>
+  <h5 style="word-spacing: 5px">PERSONAL WEBSITE<br><br></h5>
+    <div class="w3-padding-32">
+      <a href="#" class="w3-btn w3-xxlarge w3-theme-dark" style="font-weight:900;">ABOUT ME</a>
+    </div>
+  </div>
+</header>
+
+<hr>
+ 
+<div class="w3-center">
+  <h2>LOOK HERE</h2> 
+  <p>Know more about me in a short time</p>
+</div>   
+
+<header class="w3-container w3-blue-grey">
+  <h2>My Profile</h2>
+</header>
+
+<div class="w3-container w3-white">
+ 
+  <h2>Education</h2>
+  <p style="font-size:20px"><strong><a class="schoolweb" href="http://www.wustl.edu">Washington University in St. Louis (St. Louis, MO)</a></strong></p>
+  <p>Master of Electrical Engineering, Signal and Image Processing, May 2016<br>GPA: 3.73
+  </p>
+ 
+  <p style="font-size:20px"><strong><a class="schoolweb" href="http://www.nuaa.edu.cn">Nanjing University of Aeronautics and Astronautics  (Nanjing, China)</a></strong></p>
+  <p>Double Major: B.S., Communication Engineering, International Finance, Sep. 2010 - July 2014 <br>
+GPA: 3.4
+</p>
+  <p><strong style="font-size:20px">Honors:</strong> The Third Prize of University (2010-2013), The Second Price of University (2014)</p>
+</div>
+
+<header class="w3-container w3-blue-grey">
+  <h2>Experience</h2>
+</header>
+
+<div class="w3-container w3-white">
+
+  <h2>Projects</h2>
+  <p style="font-size:20px"><strong>Robotic lab in Washington University in St. Louis, St. Louis, Mo             Sept. 2014-Jan. 2015</strong>
+</p>
+  <ul>
+    <li>Worked on the implementation of identification and controlled algorithms of a two-link robotic manipulator, and make two-link robotic arm balance in a specific angle</li>
+  <li>Utilized Simulink and MATLAB to examine systems through dynamic simulation, and to control and study experimental systems </li>
+  </ul>
+
+  <p style="font-size:20px"><strong>Labs in Digital Signal Processing, St. Louis, Mo           Sept. 2014-Jan. 2015</strong>
+</p>
+  <ul>
+    <li>Worked on designing zero-phase band-pass systems to process ECGs as part of a protocol to identify patients at risk for developing life-threatening arrhythmias
+</li>
+  <li>Applied MATLAB into the design an optimal system, which both meet the precision and computing speed of the system
+</li>
+  </ul>
+
+
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark">
+  <h3></h3>
+  <p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+
+  </div>
+
+  </p>
+</footer>
+
+<!-- Script for Side Navigation -->
+<script>
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.width = "30%";
+    document.getElementsByClassName("w3-sidenav")[0].style.textAlign = "center";
+    document.getElementsByClassName("w3-sidenav")[0].style.fontSize = "50px";
+    document.getElementsByClassName("w3-sidenav")[0].style.paddingTop = "10%";
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-sidenav")[0].style.opacity = "0.9";
+}
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+}
+</script>
+
+<script src="http://www.w3schools.com/w3css/w3codecolors.js"></script> 
+</body>
 </html>
