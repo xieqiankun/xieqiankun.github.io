@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="w3.css">
+
+	<style>
+	html{
+		font-family: Verdana;
+		font-size:15px;
+		line-height:1.5;
+		font-weight:normal;
+	}
+	/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+[class*="col-"] {
+    padding: 15px;
+    margin: 5px;
+}
+nav{
+	margin: 0px;
+	padding-top: 4px;
+	padding-bottom: 6px;
+	color:#fff !important;background-color:#009688 !important;
+	font-size: 24px;
+	<!--border:3px solid black;-->
+	position: fixed;
+	top: 0px;
+	width:100%;
+}
+nav:after{
+	content:"";
+	clear:both;
+}
+nav ul {
+	margin: 0px;
+	padding-left: 0px;
+}
+
+
+
+nav a{
+
+	 padding-left: 10px;
+	 padding-right: 10px;
+	text-decoration: none;
+	color: inherit;
+	border-bottom: 3px solid transparent;
+
+
+}
+nav a:hover{
+	border-bottom: 3px solid #fff;
+}
+
+
+@media screen and (max-width:601px) {nav a {display:block;} nav a:first-child {padding: 0 8px} #mm1{height: 60px;} }	
+
+@media screen and (max-width:600px) {nav {text-align:center; margin: 0px;padding: 0px;} 
+}
+
+div.container{
+	padding:1px 16px;
+	float:left;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+div.outside{
+	
+	border:1px solid #ccc;
+	padding: 100;
+}
+
+div.outside:after{
+	content:"";display:table;clear:both;
+}
+
+div a{
+	text-decoration: none;
+	color: black;
+
+}
+div a:hover{
+	color: grey;
+}
+.container.col-2{
+	background-color: #607d8b;
+	color: white;
+}
+
+	</style>
+
+</head>
+<body>
+
+<nav>
+<ul >
+	<a href="index.html" ><i class="material-icons">home</i></a>
+	<a href="#" >Profile</a>
+	<a href="#" >Photes</a>
+	<a href="#" >Contact</a>
+</ul>
+</nav>
+
+<hr>
+<h2>My Profile</h2>
+<hr>
+
+<div class="outside">
+<div  class="container col-2 " id="mm1">
+	<h2>Education</h2>
+</div>
+
+<div  class="container col-9" id="mm2">
+	<p style="font-size:20px"><strong><a class="schoolweb" href="http://www.wustl.edu">Washington University in St. Louis (St. Louis, MO)</a></strong></p>
+  <p>Master of Electrical Engineering, Signal and Image Processing, May 2016<br>GPA: 3.73
+  </p>
+ 
+  <p style="font-size:20px"><strong><a class="schoolweb" href="http://www.nuaa.edu.cn">Nanjing University of Aeronautics and Astronautics  (Nanjing, China)</a></strong></p>
+  <p>Double Major: B.S., Communication Engineering, International Finance, Sep. 2010 - July 2014 <br>
+GPA: 3.4
+</p>
+  <p><strong style="font-size:20px">Honors:</strong> The Third Prize of University (2010-2013), The Second Price of University (2014)</p>
+</div>
+</div>
+
+
+<div class="outside">
+<div  class="container col-2 " id="mm3">
+	<h2>Projects</h2>
+</div>
+
+<div  class="container col-9" id="mm4">
+	<p style="font-size:20px"><strong>Robotic lab in Washington University in St. Louis, St. Louis, Mo   Sept. 2014-Jan. 2015</strong></p>
+  <ul>
+  	<li>Worked on the implementation of identification and controlled algorithms of a two-link robotic manipulator, and make two-link robotic arm balance in a specific angle
+</li>
+  	<li>Utilized Simulink and MATLAB to examine systems through dynamic simulation, and to control and study experimental systems 
+</li>
+  </ul>
+  <p style="font-size:20px"><strong>Labs in Digital Signal Processing, St. Louis, Mo    Sept. 2014-Jan. 2015</strong></p>
+  <ul>
+  	<li>Worked on designing zero-phase band-pass systems to process ECGs as part of a protocol to identify patients at risk for developing life-threatening arrhythmias
+
+</li>
+  	<li>Applied MATLAB into the design an optimal system, which both meet the precision and computing speed of the system
+ 
+</li>
+  </ul>
+
+  <p style="font-size:20px"><strong>China Telecommunications Co., Ltd, Kunshan, China       Feb. 2014 – June 2014
+</strong></p>
+  <ul>
+  	<li>Finished the downloads report, taking data analysis and statistics, and kept in touch with product manager according to new policies of application stores to make sure the application meet the requirement specifically
+
+</li>
+  	<li>Updated the status and accuracy of projects assigned through communicating smoothly and clearly with supervisors
+</li>
+  </ul>
+</div>
+</div>
+
+<div class="outside">
+<div  class="container col-2 " id="mm5">
+	<h2>Skills</h2>
+</div>
+
+<div  class="container col-9" id="mm6">
+	<p style="font-size:20px"><strong>Technical:</strong></p>
+  <p>Deep understanding of Communications Theory, Digital signal processing, Signal and system, Experience with MATLAB/Simulink, C++, VHDL/Verilog, Protel, Java
+  </p>
+ 
+  <p style="font-size:20px"><strong>Language:</strong></p>
+  <p>Fluent in Chinese
+
+</p>
+</div>
+</div>
+
+
+<script>
+function $(id){ 
+return document.getElementById(id) 
+} 
+function getHeight() { 
+if ($("mm1").offsetHeight>=$("mm2").offsetHeight){ 
+$("mm2").style.height=$("mm1").offsetHeight + "px"; 
+} 
+else{ 
+$("mm1").style.height=$("mm2").offsetHeight + "px"; 
+} 
+} 
+function getHeight1() { 
+if ($("mm4").offsetHeight>=$("mm3").offsetHeight){ 
+$("mm3").style.height=$("mm4").offsetHeight + "px"; 
+} 
+else{ 
+$("mm4").style.height=$("mm3").offsetHeight + "px"; 
+} 
+} 
+function getHeight2() { 
+if ($("mm6").offsetHeight>=$("mm5").offsetHeight){ 
+$("mm5").style.height=$("mm6").offsetHeight + "px"; 
+} 
+else{ 
+$("mm6").style.height=$("mm5").offsetHeight + "px"; 
+} 
+} 
+
+
+window.onload = function() { 
+	if (window.innerWidth >600) {
+		getHeight();
+getHeight1(); 
+getHeight2(); 
+	};
+
+
+} 
+ </script>
+</body>
+</html>
+
+
+
+
